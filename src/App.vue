@@ -1,15 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <alexComponent name="Alex" customMessage="I am text entered in a prop!" />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import alexComponent from "@/components/alex-component";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    alexComponent
   }
 }
 </script>
